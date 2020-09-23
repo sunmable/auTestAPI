@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>APIDataCenter</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class APIDataCenter implements Serializable{
+
+    private TestInfo[] testInfoList; //
+
+    public TestInfo[] getTestInfoList(){
+        return testInfoList;
+    }
+
+    public void setTestInfoList(TestInfo[] testInfoList){
+        this.testInfoList = testInfoList;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class TestInfo implements Serializable{
+
+    private long id; //ID
+    private String code; //用例编号
+    private String name; //用例名称
+    private String description; //用例描述
+    private String addTime; //添加时间
+    private String updateTime; //更新时间
+
+    public long getId(){
+        return id;
+    }
+
+    public void setId(long id){
+        this.id = id;
+    }
+
+    public String getCode(){
+        return code;
+    }
+
+    public void setCode(String code){
+        this.code = code;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getDescription(){
+        return description;
+    }
+
+    public void setDescription(String description){
+        this.description = description;
+    }
+
+    public String getAddTime(){
+        return addTime;
+    }
+
+    public void setAddTime(String addTime){
+        this.addTime = addTime;
+    }
+
+    public String getUpdateTime(){
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime){
+        this.updateTime = updateTime;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

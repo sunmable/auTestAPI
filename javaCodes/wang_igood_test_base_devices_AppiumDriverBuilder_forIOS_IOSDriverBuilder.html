@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IOSDriverBuilder</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class IOSDriverBuilder implements Serializable{
+
+    private Object endpoint; //
+    private String xcodeOrgId; //
+    private Object capabilities; //
+
+    public Object getEndpoint(){
+        return endpoint;
+    }
+
+    public void setEndpoint(Object endpoint){
+        this.endpoint = endpoint;
+    }
+
+    public String getXcodeOrgId(){
+        return xcodeOrgId;
+    }
+
+    public void setXcodeOrgId(String xcodeOrgId){
+        this.xcodeOrgId = xcodeOrgId;
+    }
+
+    public Object getCapabilities(){
+        return capabilities;
+    }
+
+    public void setCapabilities(Object capabilities){
+        this.capabilities = capabilities;
+    }
+
+}
+</pre>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>
